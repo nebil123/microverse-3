@@ -5,8 +5,20 @@
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-
-  <body>
+<style>
+  .nav-bar{
+    position: fixed;
+  }
+  @media only screen and (max-width: 500px){
+    body{
+      background-color: #ffffff;
+    }
+  }
+  .main{
+    display: flex;
+  }
+</style>
+  <body class="main">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <div>
     <header id="header"> 
@@ -19,26 +31,31 @@
 
       <nav id="nav-bar">
         <ul>
-          <li class="nav-link"><a  href="#secone">Features</a></li>
-          <li class="nav-link"><a href="#sectwo">Pricing</a></li>
-          <li class="nav-link"><a href="#secthree">How it works</a></li>
+          <li class="nav-link"><a  href="#my_sec">Features</a></li>
+          <li class="nav-link"><a href="#my_sec">Pricing</a></li>
+          <li class="nav-link"><a href="#my_sec">How it works</a></li>
         </ul>
 
       </nav>
  </header>
+ <section id="my_sec">
+   <video id="video">
+     <source src="https://www.youtube.com/watch?v=-WjxBjrxsuk">
+   </video>
+ </section>
 <div>
  
   <section id="secone">
     <h3>Made with Abdelrahman && Nebil</h3>
-    <form id="form" >
+    <form id="form" action = "https://www.freecodecamp.com/email-submit" >
       <input
-        name="email"
+       name="email"
         id="email"
         type="email"
-       
+       placeholder="Enter Email"
        
       />
-      <input id="submit" type="submit" va  />
+      <input id="submit" type="submit" value="submit" />
     </form>
   </section>
 
